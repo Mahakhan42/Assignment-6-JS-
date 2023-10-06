@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 (JS)</title>
+</head>
+<body>
+<h1><u>JavaScript Assignment 6!</u></h1>
+<h1><u>(Chapter No : 35-38) (FUNCTION)!</u></h1><br>
+ <script>
+        // Q1
+        // var date = new Date();
+        // console.log(date);
+
+        // Q2
+        // function greets(firstName,secondName){
+        // var firstName = prompt("Enter Your First Name?");
+        // var secondName = prompt("Enter Your Second Name?");
+        // var fullName = (firstName+secondName);
+        // console.log("Your FullName Is:",fullName);
+        // }
+        // greets();
+
+        // Q3
+        // var num1 = +prompt("Enter A First Number?");
+        // var num2 = +prompt("Enter A Second Number?");
+        // function sum(num1,num2){
+        //  var result = num1 + num2;
+        //  return result;
+        // }
+        // var result =  sum(num1,num2);
+        // console.log(result);
+
+       // Q4 (Calculator)
+    //    var num1 = +prompt("Enter First value..");
+    //    var opterator = prompt("Enter A Operator..");
+    //    var num2 = +prompt("Enter Second value..");
+    //    function calc(num1,opterator,num2){
+    //     if(opterator === "+"){
+    //         return num1 + num2;
+    //     }
+    //     else if(opterator === "-"){
+    //         return num1 - num2;
+    //     }
+    //     else if(opterator === "*"){
+    //         return num1 * num2;
+    //     }
+    //     else if(opterator === "/"){
+    //         return num1 / num2;
+    //     }
+    //     else{
+    //     alert("Wrong Answer..");
+    //     }
+    //    }
+    //    var results = calc(num1,opterator,num2);
+    //    console.log("Total Calculation:",results);
+
+      //Q5
+    //   function squareNumber(num){
+    //     var square = num * num;
+    //     return square;
+    //   }
+    //   var result = squareNumber(2);
+    //   console.log("Squares Is:",result);
+
+    //   Q6
+//     function factorial(num) {
+//     let result = 1;
+//     for(let i = 2; i <= num; i++) {
+//         result *= i;
+//     }
+//     return result;
+// }
+// let result = factorial(5);
+// console.log(result);  // Outputs: 120
+
+// Q7
+// function displayCounting(start, end) {
+//     let output = '';
+//     for(let i = start; i <= end; i++) {
+//         output += i + '<br>';
+//     }
+//     document.body.innerHTML = output;
+// }
+// displayCounting(1, 10);
+
+// Q8
+// function calculateHypotenuse(base, perpendicular) {
+//     function calculateSquare(num) {
+//         return num * num;
+//     }
+
+//     var  baseSquare = calculateSquare(base);
+//     var  perpendicularSquare = calculateSquare(perpendicular);
+//     var  hypotenuseSquare = baseSquare + perpendicularSquare;
+//     var hypotenuse = Math.sqrt(hypotenuseSquare);
+//     return hypotenuse;
+// }
+
+// var base = parseFloat(prompt("Enter the length of the base:"));
+// var perpendicular = parseFloat(prompt("Enter the length of the perpendicular:"));
+
+// if (!isNaN(base) && !isNaN(perpendicular)) {
+//     var hypotenuse = calculateHypotenuse(base, perpendicular);
+//     console.log("The length of the hypotenuse is: " + hypotenuse.toFixed(2));
+// } else {
+//     console.log("Invalid input. Please enter valid numbers.");
+// }
+
+// Q9
+// function calculateRectangleArea(width, height) {
+//     return width * height;
+// }
+// function calculateRectangleAreaWithVariables() {
+//     var width = arguments[0];
+//     var height = arguments[1];
+//     return width * height;
+// }
+// var widthValue = 5;
+// var heightValue = 10;
+// console.log("Area with values:", calculateRectangleArea(widthValue, heightValue));
+// var widthVariable = 8;
+// var heightVariable = 15;
+// console.log("Area with variables:", calculateRectangleAreaWithVariables(widthVariable, heightVariable));
+
+// Q10
+// function isPalindrome(str) {
+//     var cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+//     return cleanStr === cleanStr.split('').reverse().join('');
+// }
+
+// var userInput = prompt("Enter a string:");
+
+// if (userInput) {
+//     if (isPalindrome(userInput)) {
+//         console.log("The input string is a palindrome.");
+//     } else {
+//         console.log("The input string is not a palindrome.");
+//     }
+// } else {
+//     console.log("Invalid input or no input provided.");
+// }
+
+// Q11
+// function capitalizeWords(str) {
+//     var words = str.split(' ');
+//     var capitalizedWords = [];
+
+//     for (var i = 0; i < words.length; i++) {
+//         var word = words[i];
+//         var capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+//         capitalizedWords.push(capitalizedWord);
+//     }
+
+//     return capitalizedWords.join(' '); 
+// }
+// var inputString = 'the quick brown fox';
+// var capitalizedString = capitalizeWords(inputString);
+// console.log("Capitalized string: " + capitalizedString);
+
+// Q12
+// function findLongWord(str) {
+//     var words = str.split(' '); 
+//     var longestWord = '';
+    
+//     for (var i = 0; i < words.length; i++) {
+//         if (words[i].length > longestWord.length) {
+//             longestWord = words[i];
+//         }
+//     }
+    
+//     return longestWord;
+// }
+// var inputString = 'Web Development Tutorial';
+// var longestWord = findLongWord(inputString);
+// console.log("Longest word in the string: " + longestWord);
+
+// Q13
+// function countOccurrences(str, letter) {
+//     var count = 0;
+//     for (var i = 0; i < str.length; i++) {
+//         if (str[i] === letter) {
+//             count++;
+//         }
+//     }
+//     return count;
+// }
+// var inputString = 'JSResourceS.com';
+// var specifiedLetter = 'o';
+// var occurrences = countOccurrences(inputString, specifiedLetter);
+// console.log("Number of occurrences of '" + specifiedLetter + "' in the string: " + occurrences);
+
+
+// Q14
+// function calcCircumference(radius) {
+//     var circumference = 2 * Math.PI * radius;
+//     console.log("The circumference is " + circumference.toFixed(2));
+// }
+// function calcArea(radius) {
+//     var area = Math.PI * Math.pow(radius, 2);
+//     console.log("The area is " + area.toFixed(2));
+// }
+// var radius = 5; 
+// calcCircumference(radius); 
+// calcArea(radius); 
+    </script> 
+</body>
+</html>
